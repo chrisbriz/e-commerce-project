@@ -2,7 +2,6 @@
   "name": "e-commerce-project",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://chrisbriz.github.io/e-commerce-project",
   "dependencies": {
     "firebase": "^7.6.0",
     "node-sass": "^4.13.0",
