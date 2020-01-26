@@ -12,7 +12,7 @@ import CheckoutPage from './pages/checkout/checkout.component';
 
 import Header from './components/header/header.component';
 
-import { auth, createUserProfileDocument, addCollectionsAndDocuments } from './firebase/firebase.utils';
+import { auth, createUserProfileDocument } from './firebase/firebase.utils';
 import { setCurrentUser } from './redux/user/user.actions';
 import { selectCollectionsForPreview } from './redux/shop/shop.selectors';
 
@@ -35,7 +35,8 @@ class App extends React.Component {
         });
       }
       setCurrentUser(userAuth);
-      addCollectionsAndDocuments('collections', collectionsArray.map(({ title, items }) => ({ title, items })));
+      console.log(collectionsArray);
+      // addCollectionsAndDocuments('collections', collectionsArray.map(({ title, items }) => ({ title, items })));
     });
   }
 
