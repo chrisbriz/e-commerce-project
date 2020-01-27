@@ -64,12 +64,6 @@ const mapStateToProps = createStructuredSelector({
   collectionsArray: selectCollectionsForPreview
 });
 
-// const mapStateToProps = (state) => ({
-//   currentUser: state.user.currentUser,
-//   collectionsArray: selectCollectionsForPreview(state),
-//   shopd: Object.keys(state.shop.collections).map(key => state.shop.collections[key])
-// });
-
 const mapDispatchToProps = dispatch => ({
   setCurrentUser: user => dispatch(setCurrentUser(user))
 });
