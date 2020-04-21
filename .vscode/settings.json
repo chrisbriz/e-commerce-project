@@ -1,4 +1,7 @@
 {
     "git.ignoreLimitWarning": true,
-    "editor.tabSize": 2
+    "editor.tabSize": 2,
+    "editor.tokenColorCustomizations": {
+        "function": "#d4922f"
+    }
 }
